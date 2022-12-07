@@ -24,8 +24,11 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: Implementation :: CPython",
 ]
-urls.homepage = "https://github.com/mdcutone/psychopy-labjack"
-urls.changelog = "https://github.com/mdcutone/psychopy-labjack/blob/main/CHANGELOG.txt"
+urls.homepage = "https://github.com/psychopy/psychopy-labjack"
+urls.changelog = "https://github.com/psychopy/psychopy-labjack/blob/main/CHANGELOG.txt"
+urls.documentation = "https://pages.github.com/psychopy/psychopy-labjack"
+urls.repository = "https://github.com/psychopy/psychopy-labjack"
+
 dependencies = [
   "LabJackPython",
 ]
