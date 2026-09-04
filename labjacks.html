@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Labjacks &#8212; Psychopy Plugin Documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/psychopy.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=536c50fe" />
+    <link rel="stylesheet" type="text/css" href="_static/psychopy.css?v=b9f4e6dd" />
+    <script src="_static/documentation_options.js?v=d20be8f5"></script>
+    <script src="_static/doctools.js?v=b682be12"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/js/jquery-1.11.0.min.js"></script>
     <script src="_static/js/jquery-fix.js"></script>
     <script src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -127,40 +127,32 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12 content">
+    <div class="col-md-3">
+      <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Labjacks</a></li>
+</ul>
+
+  <li>
+    <a href="index.html" title="Previous Chapter: Welcome to psychopy-labjack’s documentation!"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Welcome to ps...</span>
+    </a>
+  </li>
+<div id="sourcelink">
+  <a href="https://github.com/psychopy/psychopy/blob/master/docs/source/labjacks.rst"
+     rel="nofollow">Source</a>
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+    </div>
+    <div class="col-md-9 content">
       
-  <section id="module-psychopy_labjack.labjacks">
-<span id="labjacks"></span><h1>Labjacks<a class="headerlink" href="#module-psychopy_labjack.labjacks" title="Permalink to this heading">¶</a></h1>
-<p>This provides a basic LabJack U3 class that can write a full byte of data,
-by extending the labjack python library u3.U3 class.</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="psychopy_labjack.labjacks.U3">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">psychopy_labjack.labjacks.</span></span><span class="sig-name descname"><span class="pre">U3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoOpen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#psychopy_labjack.labjacks.U3" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="py method">
-<dt class="sig sig-object py" id="psychopy_labjack.labjacks.U3.setData">
-<span class="sig-name descname"><span class="pre">setData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endian</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'big'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">address</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6701</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#psychopy_labjack.labjacks.U3.setData" title="Permalink to this definition">¶</a></dt>
-<dd><p>Write 1 byte of data to the U3 register address (EIO default)</p>
-<p>parameters:</p>
-<blockquote>
-<div><ul>
-<li><p>byte: the value to write (must be an integer 0:255)</p></li>
-<li><p>endian: [‘big’ or ‘small’] ignored from 1.84 onwards</p></li>
-<li><p>address: U3 register to write byte to. Both str and int constants
-are supported:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>‘FIO’ == 6700</p></li>
-<li><p>‘EIO’ == 6701 (default, accessed from DB15 breakout)</p></li>
-<li><p>‘CIO’ == 6702 (4 bits wide (0 - 15))</p></li>
-</ul>
-</div></blockquote>
-</li>
-</ul>
-</div></blockquote>
-</dd></dl>
-
-</dd></dl>
-
+  <section id="labjacks">
+<h1>Labjacks<a class="headerlink" href="#labjacks" title="Link to this heading">¶</a></h1>
 </section>
 
 
@@ -183,7 +175,7 @@ are supported:</p>
           &copy; 2002-2018 <a href="https://www.peirce.org.uk/">Jonathan Peirce</a><br/>
           &copy; 2019 <a href="https://opensciencetools.org/">Open Science Tools Ltd.</a><br/><br/>
         PsychoPy<sup>®</sup> and Pavlovia<sup>®</sup> are registered trademarks of Open Science Tools Ltd.<br/>
-        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.1.3.<br/><br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 9.1.0.<br/><br/>
     </span>
 
     <a href="http://www.nottingham.ac.uk/"><img src="_static/Nottingham Supported.png", alt="Uni of Nottingham" width=250></a>
