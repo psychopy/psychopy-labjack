@@ -33,5 +33,11 @@ dependencies = [
   "LabJackPython",
 ]
 
+[project.entry-points."psychopy.experiment.components"]
+LabjackComponent = "psychopy_labjack.components.labjack:LabjackComponent"
+
+[project.entry-points."psychopy.hardware"]
+labjacks = "psychopy_labjack.labjacks"
+
 [tool.setuptools.packages.find]
-where = ["",]
+where = ["*.py", "*.png","*.svg",]

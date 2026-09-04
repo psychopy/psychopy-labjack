@@ -6,5 +6,3 @@
 # Distributed under the terms of the GNU General Public License (GPL).
 
 __version__ = '0.0.1'
-
-from .labjacks import U3
